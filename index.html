@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="shortcut icon" href="img/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="magnific-popup.css">
+
+        <title>Sneakers</title>
+    </head>
+    <body id="container">
+        <header>
+            <nav id="nav">
+                <div id="btn-mobile"></div>
+                <img src="img/logo.svg" alt="logo" class="logo">
+                <ul id="menu">
+                    <li class="first">
+                        <a href="#">Collections</a>
+                    </li>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <img src="img/icon-cart.svg" alt="cart">
+            </div>
+            <div class="pic">
+                <img src="img/image-avatar.png" alt="avatar">
+            </div>
+        </header>
+
+        <main>
+            <figure>
+                <!-- MOBILE -->
+                <div id="lbox" class="img1">
+                    <!-- <a href="" class="btn-prev" id="prev"><img src="img/icon-next.svg" alt="previous-button"></a>
+                    <a href="" class="btn-close" id="close"><img src="img/icon-close.svg" alt="close-button"></a> -->
+                    <img class="product-img" src="img/image-product-1.jpg" alt="product-1">
+                    <!-- <a href="" class="btn-next" id="next"><img src="img/icon-next.svg" alt="next-button"></a> -->
+                </div>
+
+                <!-- <div id="lbox" class="img2">
+                    <a href="" class="btn-prev" id="prev"><img src="img/icon-next.svg" alt="previous-button"></a>
+                    <a href="" class="btn-close" id="close"><img src="img/icon-close.svg" alt="close-button"></a>
+                    <img class="product-img" src="img/image-product-2.jpg" alt="product-1">
+                    <a href="" class="btn-next" id="next"><img src="img/icon-next.svg" alt="next-button"></a>
+                </div> -->
+
+                <!-- PC REFS -->
+                <div class="thumbs">
+                    <img class="thumb-img1" src="img/image-product-1-thumbnail.jpg" alt="product-1-thmb" onclick="select">
+                    <img class="thumb-img2" src="img/image-product-2-thumbnail.jpg" alt="product-2-thmb" onclick="select">
+                    <img class="thumb-img3" src="img/image-product-3-thumbnail.jpg" alt="product-3-thmb" onclick="select">
+                    <img class="thumb-img4" src="img/image-product-4-thumbnail.jpg" alt="product-4-thmb" onclick="select">
+                </div>
+            </figure>
+
+            <section>
+                <h3>SNEAKER COMPANY</h3>
+                <H1>Fall Limited Edition Sneakers</H1>
+                <p>
+                    These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole, they'll withstand everything the weather
+                    can offer.
+                </p>
+                <div class="div-prices">
+                    <span class="actual-price">$125.00</span> 
+                    <span class="discount">50%</span>
+                    <span class="price">$250.00</span> 
+                </div>
+                
+                <div class="btn">
+                    <div class="card">
+                        <button class="decrement-btn" onclick="decrement()"></button>
+                        <h2 id="root"></h2>
+                        <button class="increment-btn" onclick="increment()"></button>
+                    </div>
+                    <button class="cart-btn"><img src="img/icon-cart-2.png">Add to cart</button>
+                </div>
+            </section>
+        </main>
+        <script src="jquery.min.js"></script>
+        <script src="magnific-popup.js"></script>
+        <script src="script.js"></script>     
+    </body>
+</html>
